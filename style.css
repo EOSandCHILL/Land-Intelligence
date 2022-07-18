@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder;
+  font-size: large;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  font-size: large;
+}
+.navbar-links li a:hover {
+  color: white;
+  background-color: rgb(88, 129, 89);
+  border-radius: 15px;
+}
+
+.toggle-button {
+  margin-top: 5px;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/*.background-section-one {
+  background-color: gray;
+  height: 1500px;
+  width: 100%;
+}
+*/
+
+.welcome {
+  padding-top: 20px;
+  background: url(./large-land.jpg) no-repeat center / cover;
+}
+
+.welcome h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+  font-size: 100px;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.welcome h2 {
+  text-align: center;
+  margin: 0;
+  color: white;
+
+  padding-bottom: 55px;
+}
+
+a,
+.logo,
+.welcome h1,
+.contact-section a,
+.newsletter button,
+.terms,
+.privacy {
+  transition: 1s ease;
+}
+
+a:hover,
+.logo:hover,
+.welcome h1:hover,
+.contact-section a:hover,
+.newsletter button:hover,
+.terms:hover,
+.privacy:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+section {
+  min-height: 88vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(69, 76, 89);
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1575px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  width: 50%;
+  height: 600px;
+  background: url(./land-intell-photo.png) no-repeat center / cover;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+
+.right {
+  width: 50%;
+  min-height: 450px;
+  /*background-color: rgb(157, 85, 85);*/
+  background-color: rgb(88, 129, 89);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  margin-left: -150px;
+  border: 1px solid white;
+}
+
+.right h5 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.right p {
+  margin: 20px 0;
+  font-weight: bolder;
+  line-height: 25px;
+}
+
+.right h1 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+  border-radius: 15px;
+}
+
+.btn {
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  border: 3px solid black;
+  color: black;
+  border-radius: 15px;
+}
+
+footer {
+  background: url(./large-land.jpg) no-repeat center / cover;
+  width: 100%;
+  height: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+.contact-section,
+.contact-section a {
+  display: flex;
+  gap: 20px;
+  font-size: 45px;
+  color: white;
+  text-decoration: none;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+button {
+  font-size: 15px;
+  padding: 15px 15px;
+  border-radius: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.copyright {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.terms-and-privacy {
+  display: flex;
+  color: white;
+}
+
+.terms,
+.privacy {
+  text-decoration: none;
+  color: white;
+}
+
+.patent {
+  text-align: center;
+  color: white;
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+
+iframe {
+  width: 100%;
+  height: 860px;
+  margin: 0;
+  padding: 0 5px;
+}
