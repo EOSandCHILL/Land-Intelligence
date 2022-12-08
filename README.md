@@ -6,6 +6,7 @@ Technologies used:
 
 - html5
 - css
+- JavaScript
 - google apis
 - vscode
 
